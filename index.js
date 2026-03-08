@@ -37,26 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 4. Form Submission Mockup
-    const inquiryForm = document.getElementById('inquiryForm');
-    if (inquiryForm) {
-        inquiryForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const submitBtn = inquiryForm.querySelector('.form-btn');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.textContent = '신청 중...';
-            submitBtn.disabled = true;
+    // 4. Form Submission Mockup (Removed)
 
-            // Simulate API call
-            setTimeout(() => {
-                alert('상담 신청이 완료되었습니다. 담당자가 곧 연락드리겠습니다.');
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-                inquiryForm.reset();
-            }, 1500);
-        });
-    }
 
     // 5. Hero Activation after load
     setTimeout(() => {
