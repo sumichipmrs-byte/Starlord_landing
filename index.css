@@ -1010,6 +1010,31 @@ footer {
   letter-spacing: 1px;
 }
 
+.footer-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.footer-info .sep {
+  margin: 0 10px;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .footer-info .sep {
+    display: none;
+  }
+  .footer-info span {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
 /* --- reveal --- */
 .reveal {
   opacity: 0;
